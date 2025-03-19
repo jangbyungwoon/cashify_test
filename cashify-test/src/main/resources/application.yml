@@ -1,0 +1,22 @@
+server:
+    port: 8190
+
+spring:
+    application:
+        name: cashify-test
+    datasource:
+        url: jdbc:postgresql://pg-32rcic.vpc-pub-cdb-kr.ntruss.com:5432/cdb_test?sslmode=disable&currentSchema=cdb
+        username: jangbyungwoon
+        password: jang2601!
+        driver-class-name: org.postgresql.Driver
+        hikari:
+            minimum-idle: 5
+            maximum-pool-size: 20
+            idle-timeout: 30000
+            pool-name: HikariPool-1
+    jpa:
+        database: postgresql
+        hibernate:
+            default_schema: cdb
+            ddl_auto: create
+            

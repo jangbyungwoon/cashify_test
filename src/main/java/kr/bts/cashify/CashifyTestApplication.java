@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CashifyTestApplication {
 
 	public static void main(String[] args) {
+		System.out.println("헬로 월드!");
 		SpringApplication.run(CashifyTestApplication.class, args);
 	}
 
